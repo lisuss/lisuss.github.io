@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- npm i node-sass -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My front page</title>
+</head>
+<body id="bg-img">
+    <header>
+        
+
+      
+
+                <li class="back-item">
+                    <a href="../projects.html" class="back-link">
+                        Go back
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="lg-heading">
+            ASP.NET Core 3 REST <span class="text-secondary">API</span>
+        </h1>
+        <h2 class="api">The main goal for the application was to create fully working REST API for pizza store, connected with MySQL database. The login is protected with JWT authentication, there is also functionality of 
+            authorization added. Everything was checked by Swagger, it allowed to discover if the target was scored. The password is protecetd by keeping it in hash. Down below there are some images, which shows what this API can do.
+            You are welcomed to check them.
+        </h2>
+
+        <div class="projects">
+            <div class="item">
+                <a href="#">
+                    <img src="api-img/api2.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(1)">
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                    <img src="api-img/api3.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(2)">
+                </a>
+             </div>
+             <div class="item">
+                <a href="#">
+                    <img src="api-img/api4.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(3)">
+                </a>
+             </div>
+             <div class="item">
+                <a href="#">
+                    <img src="api-img/api5.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(4)">
+                </a>
+             </div>
+             <div class="item">
+                <a href="#">
+                    <img src="api-img/api6.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(5)">
+                </a>
+             </div>
+             <div class="item">
+                <a href="#">
+                    <img src="api-img/api7.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(6)">
+                </a>
+             </div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="api-img/api2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="api-img/api3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="api-img/api4.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="api-img/api5.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="api-img/api6.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="api-img/api7.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="column">
+            <img class="demo cursor" src="api-img/api2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Functionallity show">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/api3.jpg" style="width:100%" onclick="currentSlide(2)" alt="API checks if user already exists">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/api4.jpg" style="width:100%" onclick="currentSlide(3)" alt="JWT token">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/api5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Wrong token given">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/api6.jpg" style="width:100%" onclick="currentSlide(5)" alt="Good token given">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/api7.jpg" style="width:100%" onclick="currentSlide(6)" alt="Hash password in MySQL">
+          </div>
+
+    <script src="../js/main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- npm i node-sass -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My front page</title>
+</head>
+<body id="bg-img">
+    <header>
+        
+
+      
+
+                <li class="back-item">
+                    <a href="../projects.html" class="back-link">
+                        Go back
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="lg-heading">
+            Window Form Application 
+        </h1>
+        <h2 class="api">This is application using Window Form, it is full CRUD api, allows user to add new customers, update them and remove. When person clicks on existing user Insert
+            Button changes to Update button, it allows to put some changes in current record. All changes are send to MySQL, which makes it easy to operate by non experienced final user. This was meant to be simple apllication for the client.
+        </h2>
+
+        <div class="projects">
+            <div class="item">
+                <a href="#">
+                    <img src="wfa/img/wfa2.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(1)">
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                    <img src="wfa/img/wfa3.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(2)">
+                </a>
+             </div>
+             <div class="item">
+                <a href="#">
+                    <img src="wfa/img/wfa4.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(3)">
+                </a>
+             </div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="wfa/img/wfa2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="wfa/img/wfa3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="wfa/img/wfa4.jpg" style="width:100%">
+          </div>
+          
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="column">
+            <img class="demo cursor" src="wfa/img/wfa2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Main page">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="wfa/img/wfa3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Insert new user">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="wfa/img/wfa4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Delete selected user">
+          </div>
+    <script src="../js/main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

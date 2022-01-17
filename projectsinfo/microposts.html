@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- npm i node-sass -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My front page</title>
+</head>
+<body id="bg-img">
+    <header>
+        
+
+      
+
+                <li class="back-item">
+                    <a href="../projects.html" class="back-link">
+                        Go back
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="lg-heading">
+            CRUD <span class="text-secondary">API</span>
+        </h1>
+        <h2 class="api"> Simple CRUD application created for posting posts. It uses fake REST API by using JSON server.  
+        </h2>
+
+        <div class="projects">
+            <div class="item">
+                <a href="#">
+                    <img src="api-img/microposts2.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(1)">
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                    <img src="api-img/microposts3.jpg" 
+                    alt="Project" class="project-img" onclick="openModal();currentSlide(2)">
+                </a>
+             </div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 2</div>
+            <img src="api-img/microposts2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 2</div>
+            <img src="api-img/microposts3.jpg" style="width:100%">
+          </div>
+
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="column">
+            <img class="demo cursor" src="api-img/microposts2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Edit page">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="api-img/microposts3.jpg" style="width:100%" onclick="currentSlide(2)" alt="JSON holds the posts">
+          </div>
+         
+    <script src="../js/main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
