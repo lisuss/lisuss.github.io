@@ -1,6 +1,7 @@
 function resetGame() {
     activePlayer = 0;
     currentRound = 1;
+    gameIsOver = false;
     gameOverElement.firstElementChild.innerHTML = '<span id="winner">Playername</span> won';
     gameOverElement.style.display = 'none';
 
@@ -82,7 +83,7 @@ function selectedField(event) {
   const selectedColumn = event.target.dataset.col;
   const selectedRow = event.target.dataset.row;
 
-  if (data[selectedRow - 1][selectedColumn - 1] > 0) {
+  if (data[selectedRow - 1][selectedColumn - 1] > 0 || gameIsOver === true) {
     return;
   }
 
@@ -102,7 +103,10 @@ function selectedField(event) {
   currentPlayerName();
 }
 
+let gameIsOver = false;
+
 function winnerOfTheGame(winner) {
+    gameIsOver = true;
     gameOverElement.style.display = 'block';
     if (winner < 3 && winner > 0) {
         const winnerName = players[winner - 1].name;
