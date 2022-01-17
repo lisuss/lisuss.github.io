@@ -1,0 +1,416 @@
+@import 'config';
+@import 'menu';
+
+
+* {
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+body {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, 
+    Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 300;
+
+    &.lg-heading {
+        font-size: 5rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2),0.5);
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+
+
+    &#home {
+        
+        h1 {
+            margin-top: 20vh;
+        }
+    }
+
+}
+
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'contact-information my-image'
+    
+    
+    
+
+}
+
+.my-image {
+    grid-area: my-image;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+    height: 100px;
+}
+
+.contact-information {
+    grid-area: contact-information;
+    text-align: left;
+}
+
+.education {
+    grid-area: education;
+}
+
+.first-left {
+    grid-area: first-left;
+    height: 30px;
+    text-align: center;
+     width: 30%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     float: left;
+
+}
+
+.first-right {
+    height: 30px;
+     width: 90%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     text-align: center;
+       
+}
+
+.second-left {
+    height: 30px;
+    text-align: center;
+     width: 30%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     float: left;
+     justify-content: center;   
+}
+
+.second-right {
+    height: 30px;
+     width: 90%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     text-align: center;
+       
+}
+
+.third-left {
+    height: 30px;
+    text-align: center;
+     width: 30%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     float: left;
+     justify-content: center;   
+}
+
+.third-right {
+    height: 30px;
+     width: 90%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     text-align: center;
+       
+}
+
+.fourth-left {
+    height: auto;
+    text-align: center;
+     width: 30%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     float: left;
+     justify-content: center;   
+}
+
+.fourth-right {
+    height: auto;
+     width: 90%;
+     outline: solid 1px #000000;
+     background-color: $primary-color;
+     text-align: center;
+       
+}
+
+.education {
+    width: auto;
+    background-color: #fff;
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first-education-left {
+    height: auto;
+    text-align: center;
+     width: 30%;
+     
+     background-color: $primary-color;
+     float: left;   
+}
+.first-education-right {
+    height: auto;
+    text-align: center;
+     width: 70%;
+     
+     background-color: $primary-color;
+     float: left;   
+}
+
+.second-education-left {
+    
+    text-align: center;
+     width: 30%;
+     background-color: $primary-color;
+     float: left;   
+     display: inline;
+}
+
+.second-education-right {
+    height: auto;
+    text-align: center;
+     width: 70%;
+     z-index: 1;
+     background-color: $primary-color;
+     float: left;   
+}
+
+.languages {
+  
+    background-color: #fff;
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 20px;
+    z-index: -1;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+
+.first-language-left {
+    height: auto;
+    text-align: center;
+     width: 30%;
+     margin-top: 20px;
+     
+     background-color: $primary-color;
+     float: left;   
+}
+
+.first-language-right {
+    margin-top: 20px;
+    height: auto;
+    text-align: center;
+     width: 70%;
+     
+     background-color: $primary-color;
+     float: left;   
+}
+
+.second-language-left {
+    height: auto;
+    text-align: center;
+     width: 30%;
+     margin-top: 20px;
+     
+     background-color: $primary-color;
+     float: left;   
+}
+
+.second-language-right {
+    padding-top: 20px;
+    height: auto;
+    text-align: center;
+    width: 70%;
+     
+    background-color: $primary-color;
+     float: left;   
+}
+
+.technical-skills {
+      
+    background-color: #fff;
+    color: $secondary-color;
+    text-align: center;
+    margin-top: 20px;
+    z-index: -1;
+    display: inline-block;
+    width: 100%;
+ }
+
+ .first-skill-left{
+    height: auto;
+    text-align: center;
+     width: 30%;
+    background-color: $primary-color;
+     float: left;   
+     padding-top: 20px;
+}
+
+.first-skill-right {
+    height: auto;
+    text-align: center;
+     width: 70%;
+     padding-top: 20px;
+     background-color: $primary-color;
+     float: left;   
+}
+
+.second-skill-left{
+    height: auto;
+    text-align: center;
+     width: 30%;
+    background-color: $primary-color;
+     float: left;   
+     padding-top: 20px;
+}
+
+.second-skill-right {
+    height: auto;
+    text-align: center;
+     width: 70%;
+     padding-top: 20px;
+     background-color: $primary-color;
+     float: left;   
+}
+
+
+// projects
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    img {
+        width: 100%;
+        border: 3px black solid;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+            transform: rotate( 15deg );
+            transition: all 3sw;
+        }
+    }
+}
+
+// button styles
+.btn {
+    border: 0;
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    text-align: center;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+}
+
+.btn-blue {
+    @extend .btn;
+    background: lighten(blue, 50);
+    color: blue;
+}
+.project-img{
+    width: 270px;
+    height: 270px;
+}
+
+.back-item {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.back-link {
+    text-decoration: none;
+    margin-top: 20px;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.api{
+    text-align: justify;
+}
+
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block; /* <= shrinks container to image size */
+    transition: transform 150ms ease-in-out;
+  }
+  
+  .img-overlay-wrap img { /* <= optional, for responsiveness */
+     display: block;
+     width: 100%;
+
+  }
+  
+  .img-overlay-wrap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+  
+  .img-overlay-wrap:hover {
+    transform: rotate( 15deg );
+    transition: all 3s;
+  }
+
+@import 'mobile';

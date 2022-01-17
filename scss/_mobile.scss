@@ -1,0 +1,364 @@
+@include mediaXL {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+// desk laptops
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// tablets
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul.menu-nav {
+        float: none;
+        width: 100%;
+        min-height: 0;
+        opacity: 0.99;
+
+        &.show {
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    .menu-nav {
+        height: 100vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 20px;
+    }
+    
+
+    .about-info {
+        grid-template-areas: 
+        'my-image'
+        'contact-information'      
+    }
+    .contact-information {
+        text-align: center;
+    }
+    
+    .education {
+        width: auto;
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .first-education-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;  
+    }
+    .first-education-right {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;    
+    }
+    
+    .second-education-left {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block; 
+    }
+    
+    .second-education-right {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;  
+    }
+    
+    .languages {
+      
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        z-index: -1;
+        display: inline-block;
+        width: 100%;
+     }
+    
+    .first-language-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+    }
+    
+    .first-language-right {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block; 
+    }
+    
+    .second-language-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+    }
+    
+    .second-language-right {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+        padding-bottom: 20px;
+    }
+
+    .technical-skills {
+      
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        z-index: -1;
+        display: inline-block;
+        width: 100%;
+    }
+
+        .first-skill-left{
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+        }
+        
+        .first-skill-right {
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block;  
+        }
+        
+        .second-skill-left{
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+        }
+        
+        .second-skill-right {
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+            padding-bottom: 20px;
+        }
+     
+
+    .main-info {
+        outline: none;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// phones
+@include mediaSm {
+    main#home h1 {
+        margin-top: 20vh;
+    }
+
+    .projects {
+        grid-template-columns:  1fr;
+    }
+
+    main {
+        align-items: center;
+        text-align: center;
+       
+
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    .about-info {
+        grid-template-areas: 
+        'my-image'
+        'contact-information'      
+    }
+    .contact-information {
+        text-align: center;
+    }
+    
+    .education {
+        width: auto;
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .first-education-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;  
+    }
+    .first-education-right {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;    
+    }
+    
+    .second-education-left {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block; 
+    }
+    
+    .second-education-right {
+        padding-top: 5px;
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;  
+    }
+    
+    .languages {
+      
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        z-index: -1;
+        display: inline-block;
+        width: 100%;
+     }
+    
+    .first-language-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+    }
+    
+    .first-language-right {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block; 
+    }
+    
+    .second-language-left {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+    }
+    
+    .second-language-right {
+        height: auto;
+        text-align: center;
+        width: 100%;   
+        background-color: $primary-color;
+        display: inline-block;   
+        padding-bottom: 20px;
+    }
+
+    .technical-skills {
+      
+        background-color: #fff;
+        color: $secondary-color;
+        text-align: center;
+        margin-top: 20px;
+        z-index: -1;
+        display: inline-block;
+        width: 100%;
+    }
+
+        .first-skill-left{
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+        }
+        
+        .first-skill-right {
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block;  
+        }
+        
+        .second-skill-left{
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+        }
+        
+        .second-skill-right {
+            height: auto;
+            text-align: center;
+            width: 100%;   
+            background-color: $primary-color;
+            display: inline-block; 
+            padding-bottom: 20px;
+        }
+
+    
+
+    
+}
