@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css"/>
+    <title>Movie List</title>
+    <style>
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Movie List</h1>
+        <form id="movie-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="director">Director</label>
+                <input type="text" id="director" class="u-full-width">
+            </div>
+            <div>
+                <label for="release-date">Release date</label>
+                <input type="text" id="release-date" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="submit" class='u-full-width'>
+            </div>
+        </form>
+        <hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Release Year</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id='movie-list'></tbody>
+        </table>
+    </div>
+
+    <script src="appes6.js"></script>
+</body>
+</html>
