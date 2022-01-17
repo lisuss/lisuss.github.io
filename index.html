@@ -1,12 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- npm i node-sass -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My front page</title>
 </head>
-<body>
-    <h1>Hello</h1>
-    <a href=""></a>
+<body id="bg-img">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="#" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Contactform/index.html" class="nav-link">
+                        Contact me
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1 class="lg-heading">
+            Wojciech <span class="text-secondary">Sebestowicz</span>
+        </h1>
+        <h2 class="sm-heading">My projects and work</h2>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

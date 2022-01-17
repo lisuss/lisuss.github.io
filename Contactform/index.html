@@ -4,11 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="../css/main.css">
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
+<body id="bg-img">
+  <header>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../about.html" class="nav-link">
+                    About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="../projects.html" class="nav-link">
+                    Projects
+                </a>
+            </li>
+
+            <li class="nav-item current">
+                <a href="Contactform/index.html" class="nav-link">
+                    Contact me
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
   <h1>Here is the place where you can contact with me</h1>
   <div class="contact-form">
   <form action="https://formspree.io/wojciech.sebestowicz@gmail.com" method="POST">
@@ -27,5 +65,6 @@
     <button type="submit" class="submit form-control">Send</button>
   </form>
   </div>
+  <script src="../js/main.js"></script>
 </body>
 </html>
